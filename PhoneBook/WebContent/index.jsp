@@ -23,27 +23,27 @@
 		    <div class="pure-u-sm-1 pure-u-1-3">
 		    	<div class="box">
 		    		<h2><i class="fa fa-user-plus"></i>New contact</h2>
-		    		<form class="pure-form">
+		    		<div class="pure-form">
 					    <fieldset class="pure-group">
-					        <input type="text" class="pure-input-1-2" placeholder="First Name">
-					        <input type="text" class="pure-input-1-2" placeholder="Last Name">
-					        <input type="email" class="pure-input-1-2" placeholder="Phone">
+					        <input type="text" class="pure-input-1-2" placeholder="First Name" id="firstname">
+					        <input type="text" class="pure-input-1-2" placeholder="Last Name" id="lastname">
+					        <input type="tel" class="pure-input-1-2" placeholder="Phone" id="phone">
 					    </fieldset>
-					    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">
+					    <button class="pure-button pure-input-1-2 pure-button-primary" id="buttonAdd">
 					    <i class="fa fa-user-plus"></i>Add</button>
-					</form>
+					</div>
 				</div>
 			</div>
 		    <div class="pure-u-sm-1 pure-u-1-3">
 				<div class="box">
 		    		<h2><i class="fa fa-search"></i>Search contact</h2>
-		    		<form class="pure-form">
+		    		<div class="pure-form">
 		    			<fieldset class="pure-group">
-					    	<input type="text" class="pure-input-1-2">
+					    	<input type="text" class="pure-input-1-2" id="inputsearch">
 					     </fieldset>
-					    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">
+					    <button class="pure-button pure-input-1-2 pure-button-primary" id="buttonSearch">
 					    <i class="fa fa-search"></i>Search</button>
-					</form>
+					</div>
 				</div>
 			</div>
 			<div class="pure-u-sm-1 pure-u-1-3">
@@ -58,29 +58,15 @@
 					        </tr>
 					    </thead>
 					
-					    <tbody>
-					        <tr>
-					            <td>Arun</td>
-					            <td>Kart</td>
-					            <td>415-8679089</td>
-					        </tr>
-					
-					        <tr>
-					            <td>Juan</td>
-					            <td>Torus</td>
-					            <td>301-2390930</td>
-					        </tr>
-					
-					        <tr>
-					            <td>Nolux</td>
-					            <td>Fernandez</td>
-					            <td>310-2930291</td>
-					        </tr>
+					    <tbody id="datalist">
 					    </tbody>
 					</table>
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<script src="js/phonebook.js"></script>
+	
 </body>
 </html>

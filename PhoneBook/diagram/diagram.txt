@@ -1,1 +1,33 @@
-Add a diagram in jpg, png format within this path.
+Phonebook,
+
+Phonebook project spring and vanilla JS, lets u to list contacts, add them and filter them by any field with contains method.
+
+
+#Structure 
+
+
+It is composed by two main structures.
+
+FE, based on Js vanilla, Html mark up and css styles.
+
+BE, A java spring , MVC rest api project based on maven starter web pattern.
+
+It uses JPA functionalities to connect to a postgres DB with a repository pattern. also enity framework to define model/domain in the app
+
+It exposes a RESTfull API for contact entity, with GET for query and POST for insertion methods.
+
+it uses the auto-wired to implement injection dependency with spring for the objects instantiation 
+
+and a provider pattern for the initialization of the complete application with the automatic scan for components (beans, repository), entities and services
+
+
+#Configuration
+
+Project dependencies are managed by maven (check pom.xml)
+It connects to a postgres DB based on a application.properties descriptor 
+
+#Requirements
+
+Java 8 to filter with streams and lambda expressions
+
+tomcat 8
